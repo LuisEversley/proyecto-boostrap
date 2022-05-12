@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materialize</title>
+
+    <!-- Our css file link -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Import font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body id="home" class="scrollspy">
+    <div class="navbar-fixed">
+      <nav class="nav-fixed black lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo"
+            ><i class="material-icons">code</i>Logo</a
+          >
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="hoverable"><a href="#home">Home</a></li>
+            <li class="hoverable"><a href="#service">Service</a></li>
+            <li class="hoverable"><a href="#blog">Blog</a></li>
+            <li class="hoverable"><a href="#contact">Contact</a></li>
+            <li>
+              <a class="waves-effect waves-light btn-small white black-text"
+                >Inquire Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a class="waves-effect waves-light btn-small white black-text"
+          >Inquire Now</a
+        >
+      </li>
+    </ul>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/resort1.jpg" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>Imagine your resort dream</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur, necessitatibus?
+            </h5>
+            <a class="waves-effect waves-light black white-text btn-large pulse"
+              >Learn More</a
+            >
+          </div>
+        </li>
+        <li>
+          <img src="img/resort2.jpg" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Travel with us</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur, necessitatibus?
+            </h5>
+            <a class="waves-effect waves-light black white-text btn-large pulse"
+              >Learn More</a
+            >
+          </div>
+        </li>
+        <li>
+          <img src="img/resort3.jpg" />
+          <!-- random image -->
+          <div class="caption right-align">
+            <h3>Live a different experience</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur, necessitatibus?
+            </h5>
+            <a class="waves-effect waves-light black white-text btn-large pulse"
+              >Learn More</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="conatiner scrollspy" id="service">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="block">
+              <h2 class="center">
+                <i class="material-icons medium">beach_access</i>
+              </h2>
+              <h5 class="center">Beatiful beaches</h5>
+              <p class="light center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                eum minima rem atque enim quo, corporis, tenetur dolorum error
+                tempore maxime dicta. Ratione quisquam, architecto at adipisci
+                corrupti nobis quis?
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="block">
+              <h2 class="center">
+                <i class="material-icons medium">camera_alt</i>
+              </h2>
+              <h5 class="center">Bring your camera</h5>
+              <p class="light center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                eum minima rem atque enim quo, corporis, tenetur dolorum error
+                tempore maxime dicta. Ratione quisquam, architecto at adipisci
+                corrupti nobis quis?
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="block">
+              <h2 class="center">
+                <i class="material-icons medium">child_care</i>
+              </h2>
+              <h5 class="center">Have un like a child</h5>
+              <p class="light center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                eum minima rem atque enim quo, corporis, tenetur dolorum error
+                tempore maxime dicta. Ratione quisquam, architecto at adipisci
+                corrupti nobis quis?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-blog scrollspy" id="blog">
+      <h6 class="center">Publish what you think</h6>
+      <h3 class="center">Latest Blogs</h3>
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/resort1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Card Title<i class="material-icons right">more_vert</i></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Card Title<i class="material-icons right">close</i></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/resort1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Beach<i class="material-icons right">more_vert</i></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Beach<i class="material-icons right">close</i></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/resort1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Beach<i class="material-icons right">more_vert</i></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Beach<i class="material-icons right">close</i></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/resort1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Beach<i class="material-icons right">more_vert</i></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Beach<i class="material-icons right">close</i></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blog scrollspy">
+      <h6 class="center">Best choices selected by our clients</h6>
+      <h3 class="center">Top ranking</h3>
+      <table class="centered responsive-table">
+        <thead>
+          <tr>
+              <th>Pic</th>
+              <th>Beach Name</th>
+              <th>Location</th>
+              <th>Average Lunch Price</th>
+              <th>Score</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://i0.wp.com/travelgrafia.co/wp-content/uploads/2019/04/mejores-playas-del-caribe-colombiano.jpg?w=800&ssl=1">
+                <img src="img/playa.jpg" width="30" height="30" class="circle">
+              </a>
+            </td>
+            <td>RINCÓN DEL MAR</td>
+            <td>SUCRE</td>
+            <td>$3.59</td>
+            <td><img src="img/full.png" width="30" height="30"></td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://i0.wp.com/travelgrafia.co/wp-content/uploads/2020/01/Mejores-playas-de-Colombia-en-el-caribe-colombiano.jpg?w=800&ssl=1">
+                <img src="img/playa2.jpg" width="30" height="30" class="circle">
+              </a>
+            </td>
+            <td>ISLAS DEL ROSARIO</td>
+            <td>BOLÍVAR Y SUCRE</td>
+            <td>$3.76</td>
+            <td><img src="img/full.png" width="30" height="30"></td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://i0.wp.com/travelgrafia.co/wp-content/uploads/2018/06/beach-tayrona-park-colombia.jpg?w=800&ssl=1">
+                <img src="img/playa3.jpg" width="30" height="30" class="circle">
+              </a>
+            </td>
+            <td>PARQUE TAYRONA</td>
+            <td>MAGDALENA</td>
+            <td>$3.00</td>
+            <td><img src="img/half.png" width="30" height="30"></td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://i0.wp.com/travelgrafia.co/wp-content/uploads/2019/07/ballenas-jorobadas-cerca-a-cali.jpg?w=800&ssl=1">
+                <img src="img/playa4.jpg" width="30" height="30" class="circle">
+              </a>
+            </td>
+            <td>URAMBA BAHÍA MÁLAGA</td>
+            <td>VALLE DEL CAUCA</td>
+            <td>$2.79</td>
+            <td><img src="img/half.png" width="30" height="30"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section section-blog scrollspy">
+      <h6 class="center">Want to talk with us?</h6>
+      <h4 class="center">Send us a message</h4>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 m6 l6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">What's your name</label>
+            </div>
+            <div class="input-field col s12 m6 l6">
+              <i class="material-icons prefix">email</i>
+              <input id="icon_prefix" type="email" class="validate">
+              <label for="icon_prefix">Type your email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m12 l12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Describe your request</label>
+            </div>
+            <div class="col s12 m12 l12 center-align">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="page-footer center black">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <h6>Para mas information</h6>
+            <h3 class="white-text">Escribir a nuestras redes sociales </h3>
+            <div class="social_media align-center">
+              <a href="https://whatsapp.com"><img src="img/whatsapp-256.png" width="30" height="30"></a>
+              <a href="https://facebook.com"><img src="img/facebook-256.png" width="30" height="30"></a> 
+              <a href="https://instagram.com"><img src="img/instagram-256.png" width="30" height="30"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright center">
+        <div class="container">
+          <small>© 2020 Copyright L.E.E.O</small> 
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
