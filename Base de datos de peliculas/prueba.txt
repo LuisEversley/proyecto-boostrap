@@ -1,0 +1,118 @@
+/ as sysdba
+
+drop table PeliculasRentadas;
+drop table Pelicula;
+
+CREATE TABLE PeliculasRentadas(
+   IdRentada int not null primary key,
+   idPelicula VARCHAR(45) not null,
+   IdCliente int not null,
+   Fecha_de_renta VARCHAR(45)
+);
+
+CREATE TABLE Pelicula(
+   IdPelicula int not null primary key,
+   Nombre VARCHAR(45) not null
+);
+
+INSERT INTO PeliculasRentadas VALUES (1,'1',1,'2020-10-01');
+INSERT INTO PeliculasRentadas VALUES (2,'2',1,'2020-01-11');
+INSERT INTO PeliculasRentadas VALUES (3,'3',2,'2020-03-12');
+INSERT INTO PeliculasRentadas VALUES (4,'4',2,'2020-03-12');
+INSERT INTO PeliculasRentadas VALUES (5,'5',2,'2020-03-12');
+INSERT INTO PeliculasRentadas VALUES (6,'6',3,'2020-03-12');
+
+INSERT INTO pelicula VALUES (1,'DeadPool');
+INSERT INTO pelicula VALUES (2,'DeadPool');
+INSERT INTO pelicula VALUES (3,'Titanic');
+INSERT INTO pelicula VALUES (4,'Vengadores');
+INSERT INTO pelicula VALUES (5,'Vengadores');
+INSERT INTO pelicula VALUES (6,'Vengadores');
+
+
+
+SELECT pp.nombre, y.mayor from pelicula pp inner join (SELECT p.idPelicula as id, MAX(b.mayor) Mayor FROM PeliculasRentadas p INNER JOIN (
+SELECT idPelicula, COUNT(*) as mayor FROM PeliculasRentadas
+GROUP BY idPelicula) b ON (p.idPelicula = b.idPelicula)
+WHERE b.mayor = (SELECT MAX(Cantidad) as mayor FROM (
+SELECT idPelicula, COUNT(*) as Cantidad FROM PeliculasRentadas
+GROUP BY idPelicula) a)
+GROUP BY P.idPelicula) y on (pp.idpelicula = y.id);
+
+================================================================================================================
+
+create table Genero
+(
+IDpelicula int  not null primary key,
+IDgenero int not null,
+Tipo de genero VARCHAR(45) not null,
+Terror VARCHAR(45) not null,
+Aventura VARCHAR(45) not null,
+Accion VARCHAR(45) not null,
+Drama VARCHAR(45) not null,
+Romance VARCHAR(45) not null,
+Para adultos VARCHAR(45) not null,
+Documentales VARCHAR(45) not nul,
+);
+
+create table Actores
+(
+Nombre VARCHAR(45) not null,
+IDactor int not null
+); 
+
+INSERT INTO Genero VALUES('0012','0001','Accion');
+INSERT INTO Genero VALUES('0023','0002','Para adultos');
+INSERT INTO Genero VALUES('0034','0003','Accion');
+INSERT INTO Genero VALUES('0045','0004','Romance');
+INSERT INTO Genero VALUES('0056','0002','Drama');
+INSERT INTO Genero VALUES('0067','0001','Documentales');
+INSERT INTO Genero VALUES('0078','0004','Aventura');
+INSERT INTO Genero VALUES('0089','0002','Romance');
+INSERT INTO Genero VALUES('0090','0001',)'Terror';
+
+
+
+INSERT INTO Cliente VALUES ('Jhonatan', 'Romero', 'jhon1234500', '1234','4');
+INSERT INTO Cliente VALUES ('Juan', 'Dominguez', '', 'jpjp2015', '9941','5');
+INSERT INTO Cliente VALUES ('Luis', 'Eversley', '', 'luiever231','3789','5'),
+INSERT INTO Cliente VALUES ('Pablo', 'Rodriguez', '', 'prao1567', '4123','2');
+
+INSERT INTO Pelicula VALUES ('0001', 'Rapido y Furioso, '8' , '1', '5', '072','30','24');
+INSERT INTO Pelicula VALUES ('0002', 'Soy leyenda', '4', '1', '072','10','9');
+INSERT INTO Pelicula VALUES ('0004', 'Que paso ayer', '3', '2', '048','10','3');
+INSERT INTO Pelicula VALUES ('0003', 'El tirador', '3', '1', '024','10','6');
+
+create table Cliente
+(
+Nombre VARCHAR(45) not null,
+Apellido VARCHAR(45) not null,
+Usuario VARCHAR(45) not null,
+Contraseña int not null,
+IDcliente int not null primary key,
+Puntuacion int
+);
+
+create table Peliculas
+(
+IDpelicula int  not null primary key,
+Nombre VARCHAR(45) not null,
+calificacion int not null,
+IDgenero int not null,
+IDtipodelalquiler int not null,
+Cantidad total de peliculas int not null,
+Peliculas rentadas int
+);
+
+create table Peliculas x actor
+(
+IDpelicula int not null,
+IDactor int not null
+);
+
+create table Peliculas Rentadas
+(
+IDpelicula int  not null,
+IDcliente int  not null,
+Fecha de renta VARCHAR(45) not null
+);
